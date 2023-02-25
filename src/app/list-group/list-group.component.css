@@ -1,0 +1,21 @@
+.list-group{
+    border-radius: 5px;
+    border-color: solid black;
+    border-spacing: 5px;
+    text-size-adjust: 10px;
+    border-style: double;
+    border-style: ridge;
+    text-align: left;
+    text-overflow: ellipsis ;
+    }
+.vl{
+    border-left: 6px solid lightcoral;
+     height: 15px;
+     border-radius: 1px;
+}
+{
+
+}
+.div{
+    padding: 30px ;
+}

@@ -1,0 +1,10 @@
+.nav-item{
+    margin: auto;
+    /* padding: 10px; */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-bottom: solid red;
+    border-bottom-width: 7px;
+    border-radius: 2px;
+    /* border-spacing: auto; */
+    
+}
