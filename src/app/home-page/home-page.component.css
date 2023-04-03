@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+}
+h1{
+    background-color: black;
+    color: rgba(255, 255, 255, 0.906);
+    margin: auto;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 3%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
