@@ -2,19 +2,19 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cards',
-  templateUrl: './cards.component.html',
+  templateUrl: './cards.component.html', 
   styleUrls: ['./cards.component.css']
 })
 
 export class CardsComponent {
-  @Input() img: string;
-  link: string;
-  description: string;
+  @Input() Img: string;
+  @Input() Link: string;
+  @Input() Description: string;
 
   constructor(){
-    this.img = " ";
-    this.link = "Picture of target sport";
-    this.description = "STREAMS";
+    this.Img = "Image here";
+    this.Link = "Link to target sport";
+    this.Description = "";
 
   }
 }

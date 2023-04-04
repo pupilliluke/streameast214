@@ -5,6 +5,30 @@
 <app-upcoming-nav-bar></app-upcoming-nav-bar>
 
 <h1> Upcoming </h1>
-<app-list-group></app-list-group>
+<div class = "blackbackground">
+<!-- container with list group here -->
+<div class="container" style = "padding:50px; background-color:gray; ">
+    
+    <!-- <div *ngFor="let link of links"> -->
+    <app-list-group class = "one" Teams = "San Antonio Spurs vs Miami Heat" Sport = "NBA" Date = "2.2.22"></app-list-group>
+    <app-list-group class = "two" Teams = "Juventus vs Real Madrid" Sport = "Soccer" Date = "2.23.22"></app-list-group>
+    <app-list-group class = "three" Teams = "Pittsburgh Steelers vs Miami Dolphins" Sport = "NFL" Date = "2.24.22"></app-list-group>
+    </div>
+</div>
+<!-- </div> -->
 
-<app-cards></app-cards>
+<!-- cards here -->
+<div class="row" style = "background-color: gray">
+    <h2 style = "background-color: gray; margin-bottom: -20px; font-size: 40px; padding:2%">More Categories</h2>
+
+    <div class = "row row-cols-1 row-cols-md-2 g-4" style = "padding-left:10%; padding-right:10%">
+    <!-- <app-cards class = "one" Description = "NBA" Img = "assets/nbaStreams.jpeg"></app-cards>
+    <app-cards class = "two" Description = "NHL" Img = "assets/nhlStreams.jpeg"></app-cards>
+    <app-cards class = "three" Description = "CFB" Img = "assets/wvu.jpeg"></app-cards>
+    <app-cards class = "four" Description = "NFL" Img = "assets/jj.png"></app-cards> -->
+    <div *ngFor = "let card of cards">
+        <app-cards class = "c1" Img = {{card.Img}} Description = {{card.Description}} Link = "{{card.Link}}"></app-cards>
+    </div>
+
+</div>
+

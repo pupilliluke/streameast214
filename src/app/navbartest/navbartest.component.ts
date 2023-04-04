@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { idText } from 'typescript';
 
 @Component({
   selector: 'app-navbartest',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbartest.component.css']
 })
 export class NavbartestComponent {
+  @Input() League: string;
+  @Input() Link: string;
 
+  constructor(){
+    this.League = " ";
+    this.Link = " " ;
+  }
 }

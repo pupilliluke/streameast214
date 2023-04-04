@@ -7,7 +7,7 @@
     border-style: ridge;
     text-align: left;
     text-overflow: ellipsis ;
-    margin: .1%;
+    margin: .3%;
     background-color: rgb(229, 227, 227);
 
     }
@@ -19,14 +19,9 @@
 .sport{
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-.div{
-    padding: 30px ;
-}
+
 .container{
 
     background-color: rgb(72, 71, 71);
     
-}
-.list-group-item{
-    margin:.2%;
 }

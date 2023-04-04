@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-list-group',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./list-group.component.css']
 })
 export class ListGroupComponent {
+    @Input() Sport: String;
+    @Input() Teams: String;
+    @Input() Date: String;
 
+    constructor(){
+      this.Sport= " ";
+      this.Teams = " " ;
+      this.Date = " " ;
+
+    }
 }

@@ -7,6 +7,7 @@ const routes: Routes = [
     
     {path: '', component: HomePageComponent},
     {path: 'nhlstreams', component: nhlStreamsComponent}
+   
 ];
 
 @NgModule({
