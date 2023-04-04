@@ -12,8 +12,8 @@ export class CardsComponent {
   description: string;
 
   constructor(){
-    this.img = "Sport";
-    this.link = "Picture of sport";
+    this.img = " ";
+    this.link = "Picture of target sport";
     this.description = "STREAMS";
 
   }

@@ -4,12 +4,25 @@
     border: 1%;
 }
 .row{
-    background-color: gray;
-    /* background-image: url(nhlStreams.jpeg); */
-    
+    background-color: gray;    
 }
 .h1{
     background-color: gray;
 
 }
-    
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    text-decoration-style: solid;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium';
+
+  }
+ 
+  .card-img-top{
+    filter: brightness(50%);
+  }
+ 
