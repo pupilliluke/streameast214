@@ -1,0 +1,27 @@
+h1{
+    background-color: rgb(42, 42, 42);
+    color: rgba(255, 255, 255, 0.906);
+    margin: auto;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 3%;
+    /* font-family: Formula1 display wide; */
+
+}
+h2{
+    background-color: rgb(65,65,65);
+    color:white;
+    font-size: 40px;
+    margin: auto;
+    padding-top: 4%;
+    margin-bottom:-30px;
+    padding-left: 150px;
+    font-family:'Formula1wide.ttf';
+}
+hr{
+    padding-bottom: 200px;
+}
+.background{
+    background-color: rgb(42, 42, 42);
+    padding-bottom: 25%;
+}

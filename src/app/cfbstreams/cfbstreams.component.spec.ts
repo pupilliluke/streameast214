@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CfbstreamsComponent } from './cfbstreams.component';
+import { cfbStreamsComponent } from './cfbstreams.component';
 
 describe('CfbstreamsComponent', () => {
-  let component: CfbstreamsComponent;
-  let fixture: ComponentFixture<CfbstreamsComponent>;
+  let component: cfbStreamsComponent;
+  let fixture: ComponentFixture<cfbStreamsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CfbstreamsComponent ]
+      declarations: [ cfbStreamsComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CfbstreamsComponent);
+    fixture = TestBed.createComponent(cfbStreamsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,2 +1,11 @@
 <app-navbartest></app-navbartest>
 
+<div class="container" style = "padding:50px; background-color:gray; ">
+    
+    <!-- <div *ngFor="let link of links"> -->
+
+        <div *ngFor = "let m of data">
+            <app-list-group class = "c1" Sport = {{m.Sport}} Teams = {{m.Teams}} Date = "{{m.Date}}"></app-list-group>
+        </div>
+
+    </div>

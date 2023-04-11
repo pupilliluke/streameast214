@@ -1,21 +1,31 @@
 h1{
-    background-color: black;
+    background-color: rgb(42, 42, 42);
     color: rgba(255, 255, 255, 0.906);
     margin: auto;
     text-align: center;
     padding-top: 4%;
     padding-bottom: 3%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Formula1-Wide_web;
 }
-.h2{
-    background-color: gray;
-    text-decoration: black;
+h2{
+    background-color: rgb(65,65,65);
+    color:white;
+    font-size: 40px;
     margin: auto;
-    text-align: center;
     padding-top: 4%;
-    padding-bottom: 3%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom:-30px;
+    padding-left: 150px;
+    font-family:'Formula1-Wide_web';
 }
-.blackbackground{
-    background-color:  gray;
+.background{
+    background-color: rgb(42, 42, 42);
+}
+hr{
+    padding-bottom: 200px;
+}
+.about{
+    padding: 2%;
+    text-align:right;
+    background-color: white;
+    
 }

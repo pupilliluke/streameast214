@@ -1,4 +1,6 @@
 import { Component } from "@angular/core";
+import { nhlModel } from "./nhl.model";
+import { mock_nhl_list } from "./mock_nhl_list";
 
 @Component({
     selector: 'nhlStreams-layout',
@@ -7,5 +9,11 @@ import { Component } from "@angular/core";
 })
 
 export class nhlStreamsComponent{
+    data : nhlModel[]=[];
 
+    constructor(){
+        for(var n of mock_nhl_list){
+        this.data.push(n);
+      }
+      }
 }

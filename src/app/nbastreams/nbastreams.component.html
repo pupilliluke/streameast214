@@ -1,1 +1,33 @@
 <app-navbartest></app-navbartest>
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NBA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Teams </h1>
+<div class = "background">
+    <div class="containe">
+        <div class="row">
+          <div class="col-sm">
+                <div class="container" style = "padding:30px; background-color: rgb(42, 42, 42); ">
+
+
+                    <div *ngFor = "let n of data">
+                        <app-list-group class = "c1" Sport = {{n.Sport}} Teams = {{n.Teams}} Date = "{{n.Date}}"></app-list-group>
+                    </div>
+
+    </div>
+</div>
+            <div class="col-sm">
+                <div id="div2">
+                    <div *ngFor = "let k of lis">
+                        <div class="col-sm">
+                            <img width = "50" height = "50" src ="{{k.Logo}}" />   {{k.Team}} 
+                                                
+                        </div>
+                    </div>
+
+                </div>
+         
+            </div>
+        </div>
+
+
+
+</div>
+<app-popup  class = "d-inline-flex p-2"></app-popup>

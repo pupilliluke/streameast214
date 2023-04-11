@@ -1,3 +1,13 @@
 <app-navbartest></app-navbartest>
+<h1> BOXING</h1>
+<div class = "background">
+<div class="container" style = "padding:50px; background-color: rgb(42, 42, 42); ">
+    
+    <!-- <div *ngFor="let link of links"> -->
 
+        <div *ngFor = "let m of data">
+            <app-list-group class = "c1" Sport = {{m.Sport}} Teams = {{m.Teams}} Date = "{{m.Date}}"></app-list-group>
+        </div>
 
+    </div>
+</div>

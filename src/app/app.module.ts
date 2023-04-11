@@ -12,11 +12,15 @@ import { CardsComponent } from './cards/cards.component';
 import { MlbStreamsComponent } from './mlb-streams/mlb-streams.component';
 import { NbastreamsComponent } from './nbastreams/nbastreams.component';
 import { NflstreamsComponent } from './nflstreams/nflstreams.component';
-import { CfbstreamsComponent } from './cfbstreams/cfbstreams.component';
+import { cfbStreamsComponent } from './cfbstreams/cfbstreams.component';
 import { NCAAbasketballComponent } from './ncaabasketball/ncaabasketball.component';
 import { Formula1Component } from './formula1/formula1.component';
 import { BoxingComponent } from './boxing/boxing.component';
 import { UFCComponent } from './ufc/ufc.component';
+import { PopupComponent } from './popup/popup.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './user-info/user-info.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -30,16 +34,20 @@ import { UFCComponent } from './ufc/ufc.component';
     MlbStreamsComponent,
     NbastreamsComponent,
     NflstreamsComponent,
-    CfbstreamsComponent,
+    cfbStreamsComponent,
     NCAAbasketballComponent,
     Formula1Component,
     BoxingComponent,
-    UFCComponent
+    UFCComponent,
+    PopupComponent,
+    UserInfoComponent,
+    AboutComponent
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

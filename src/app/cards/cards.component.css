@@ -1,13 +1,15 @@
 .col{
-    background-color: gray;
+    /* background-color: gray; */
     padding: 1%;
     border: 1%;
+    
 }
 .row{
-    background-color: gray;    
+    background-color: rgb(42, 42, 42);
+ 
 }
 .h1{
-    background-color: gray;
+    background-color: rgb(42, 42, 42);
 
 }
 .centered {
@@ -19,10 +21,11 @@
     text-decoration-style: solid;
     font-size: 35px;
     font-family: 'Franklin Gothic Medium';
-
   }
  
   .card-img-top{
     filter: brightness(50%);
   }
- 
+ img{
+    border-radius: 5px;
+ }
