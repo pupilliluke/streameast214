@@ -1,0 +1,39 @@
+.list-group{
+    border-radius: 10px;
+    /* border-color:  rgb(229, 228, 228); */
+    border-spacing: 5px;
+    text-size-adjust: 13px;
+    text-align: right;
+    text-overflow: ellipsis ;
+    margin-left: .3%;
+    margin-right: .3%;
+    /* background-color: rgb(202, 202, 202); */
+    height: 50px;
+    padding: 5px;
+
+
+}
+.list-group-item{
+    max-height:60px;
+    border:none;
+    padding-bottom:1.4%;
+}
+.vl{
+
+    border-left: 6px solid rgba(255, 121, 152, 0.751);
+     height: 15px;
+     border-radius: 1px;
+}
+.sport{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+/* container{
+
+    background-color: rgb(72, 71, 71);
+    
+} */
+.arrow{
+    color:red;
+    padding-left:10px;
+}

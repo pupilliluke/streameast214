@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
-import { nhlStreamsComponent } from './nhlStreamsComponent/nhlStreams-layout.component';
-import { MlbStreamsComponent } from './mlb-streams/mlb-streams.component';
-import { NbastreamsComponent } from './nbastreams/nbastreams.component';
-import { NflstreamsComponent } from './nflstreams/nflstreams.component';
-import { cfbStreamsComponent } from './cfbstreams/cfbstreams.component';
-import { NCAAbasketballComponent } from './ncaabasketball/ncaabasketball.component';
-import { Formula1Component } from './formula1/formula1.component';
-import { BoxingComponent } from './boxing/boxing.component';
-import { UFCComponent } from './ufc/ufc.component';
-import { AboutComponent } from './about/about.component';
+import { nhlStreamsComponent } from './layouts/nhlStreamsComponent/nhlStreams-layout.component';
+import { MlbStreamsComponent } from './layouts/mlb-streams/mlb-streams.component';
+import { NbastreamsComponent } from './layouts/nbastreams/nbastreams.component';
+import { NflstreamsComponent } from './layouts/nflstreams/nflstreams.component';
+import { cfbStreamsComponent } from './layouts/cfbstreams/cfbstreams.component';
+import { NCAAbasketballComponent } from './layouts/ncaabasketball/ncaabasketball.component';
+import { Formula1Component } from './layouts/formula1/formula1.component';
+import { BoxingComponent } from './layouts/boxing/boxing.component';
+import { UFCComponent } from './layouts/ufc/ufc.component';
+import { AboutComponent } from './components/about/about.component';
 
 const routes: Routes = [
     

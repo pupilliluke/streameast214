@@ -23,7 +23,7 @@ export class UserInfoComponent implements OnInit {
   }
 
     getUserInfo(){
-      return this.http.get<UserInfo>('https://streameast-app-default-rtdb.firebaseio.com/.json')
+      return this.http.get<UserInfo>('https://streameast-app-default-rtdb.firebaseio.com/myinfo.json')
     }
 
     showUserInfo(){

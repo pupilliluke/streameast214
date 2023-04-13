@@ -20,7 +20,7 @@ h2{
 .background{
     background-color: rgb(42, 42, 42);
 }
-hr{
+hr{ 
     padding-bottom: 200px;
 }
 .about{
@@ -28,4 +28,8 @@ hr{
     text-align:right;
     background-color: white;
     
+}
+container{
+    border-radius:500px;
+
 }
