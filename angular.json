@@ -91,6 +91,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "streameast:build:production",
+            "firebaseProject": "streameast-app",
+            "firebaseHostingSite": "streameast-app"
+          }
         }
       }
     }

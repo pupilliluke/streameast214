@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "streameast-app": {
+      "hosting": {
+        "streameast": [
+          "streameast-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "streameast-app"
+  }
+}
