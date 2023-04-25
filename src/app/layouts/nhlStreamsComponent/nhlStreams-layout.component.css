@@ -8,20 +8,55 @@ h1{
     /* font-family: Formula1 display wide; */
 
 }
-h2{
-    background-color: rgb(65,65,65);
-    color:white;
-    font-size: 40px;
-    margin: auto;
-    padding-top: 4%;
-    margin-bottom:-30px;
-    padding-left: 150px;
-    font-family:'Formula1wide.ttf';
-}
-hr{
-    padding-bottom: 200px;
-}
 .background{
     background-color: rgb(42, 42, 42);
     padding-bottom: 25%;
 }
+
+#wrapper {
+    margin-left:9%;
+}
+
+#div1 {
+    margin-left:5%;
+    display: inline-block;
+    width:53%;
+    height:auto;
+    background-color:green;
+    margin-right:3%;
+    border-radius: 15px;
+    margin-bottom:50%;
+
+}
+#div2 {
+    display: inline-block; 
+    width:270px;
+    height:300px;
+    background-color:  rgb(255, 255, 255);
+    border-radius: 15px;
+    padding-left:7px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* flex-wrap: wrap;  */
+    /* justify-content: flex-start;   */
+
+}
+.container{
+    border-radius:500px;
+    padding: 5px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+}
+.here{
+    border-color: solid black;
+    border-spacing: 5px;
+    text-overflow: ellipsis;
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+    height:60px;
+    text-align:left;
+}
+.containe{
+    padding-left: 250px;
+}
+

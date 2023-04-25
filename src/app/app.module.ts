@@ -21,6 +21,7 @@ import { PopupComponent } from './components/popup/popup.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { AboutComponent } from './components/about/about.component';
+import { SmallListGroupComponent } from './components/small-list-group/small-list-group.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { AboutComponent } from './components/about/about.component';
     UFCComponent,
     PopupComponent,
     UserInfoComponent,
-    AboutComponent
+    AboutComponent,
+    SmallListGroupComponent
 
   ],
   imports: [
