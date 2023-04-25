@@ -22,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { AboutComponent } from './components/about/about.component';
 import { SmallListGroupComponent } from './components/small-list-group/small-list-group.component';
+import { StreamPageComponent } from './components/stream-page/stream-page.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { SmallListGroupComponent } from './components/small-list-group/small-lis
     PopupComponent,
     UserInfoComponent,
     AboutComponent,
-    SmallListGroupComponent
+    SmallListGroupComponent,
+    StreamPageComponent
 
   ],
   imports: [

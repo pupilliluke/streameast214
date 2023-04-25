@@ -11,6 +11,7 @@ import { Formula1Component } from './layouts/formula1/formula1.component';
 import { BoxingComponent } from './layouts/boxing/boxing.component';
 import { UFCComponent } from './layouts/ufc/ufc.component';
 import { AboutComponent } from './components/about/about.component';
+import { StreamPageComponent } from './components/stream-page/stream-page.component';
 
 const routes: Routes = [
     
@@ -24,7 +25,8 @@ const routes: Routes = [
     {path: 'Formula1', component: Formula1Component},
     {path: 'Boxing', component: BoxingComponent},
     {path: 'UFC', component: UFCComponent},
-    {path: 'about', component: AboutComponent}
+    {path: 'about', component: AboutComponent},
+    {path: 'stream-page', component: StreamPageComponent},
 ];
 
 @NgModule({

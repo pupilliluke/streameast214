@@ -44,3 +44,6 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     text-overflow: ellipsis;
     max-width:275px;
 }
+.d-flex:hover{
+    cursor:pointer;
+}
