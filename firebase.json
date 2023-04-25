@@ -1,6 +1,7 @@
 {
   "hosting": {
-    "public": "y",
+    "site": "streameast-app",
+    "public": "dist\\streameast",
     "ignore": [
       "firebase.json",
       "**/.*",
