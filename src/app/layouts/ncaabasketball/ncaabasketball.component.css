@@ -25,3 +25,9 @@ hr{
     background-color: rgb(42, 42, 42);
     padding-bottom: 25%;
 }
+.container{
+    border-radius:500px;
+    padding: 5px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+}

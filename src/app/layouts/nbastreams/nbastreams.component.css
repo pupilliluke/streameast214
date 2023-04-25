@@ -42,9 +42,10 @@ h1{
 
 }
 .container{
+    border-radius:500px;
     padding: 5px;
-    border-radius:15px;
-    background-color: rgb(213, 212, 212);
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
 }
 .here{
     border-color: solid black;
