@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CardListModel } from './components/cards/card_list.model';
 import { mock_card_list } from './components/cards/mock_card_list';
-import { mock_listGroup_list } from './components/list-group/mock_listGroup_list';
 
 @Component({
   selector: 'app-root',

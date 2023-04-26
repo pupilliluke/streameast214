@@ -11,7 +11,7 @@ import { mlbGamesService } from './mlbGames.service';
   styleUrls: ['./mlb-streams.component.css']
 })
 export class MlbStreamsComponent implements OnInit {
-  games: mlbModel[] = [];
+  games: mlbModel[] = []; 
   lis: teamsList[] =[];
     
   constructor(private mlbGamesService:mlbGamesService){

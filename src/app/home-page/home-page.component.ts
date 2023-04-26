@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { CardListModel } from '../components/cards/card_list.model';
 import { mock_card_list } from '../components/cards/mock_card_list';
-import { listgrouplistmodel } from '../components/list-group/list-group.list.model';
-import { mock_listGroup_list } from '../components/list-group/mock_listGroup_list';
-import { mock_boxing_list } from '../layouts/boxing/mock_boxing_list';
+import { homePageModel } from './homePage.model';
+import { homePageService } from './homePage.service';
 
 @Component({
   selector: 'app-home-page',
@@ -12,22 +11,29 @@ import { mock_boxing_list } from '../layouts/boxing/mock_boxing_list';
 })
 export class HomePageComponent {
   cards: CardListModel[] = [];
-  data : listgrouplistmodel[] = [];
+  games : homePageModel[] = [];
   
   
-  constructor(){
+  constructor(private homePageService:homePageService){
     for(var card of mock_card_list){
         this.cards.push(card);
     }
-
-    for(var n of mock_listGroup_list){
-        this.data.push(n);
-    }
+    for(var game of this.games){
+      this.games.push(game);
+      console.log(game);
+      }
    
-    for(var m of mock_boxing_list){
-      this.data.push(m);
-    }
   }
+
+  ngOnInit(): void {
+    this.homePageService.gethomeGames().subscribe((data: homePageModel []) => {
+      console.log("fetching games");
+      for(var game of data){
+        console.log(game);
+        this.games.push(game);
+      }
+    });
+}
 
 
 }
