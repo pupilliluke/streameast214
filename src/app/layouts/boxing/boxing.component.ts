@@ -1,22 +1,34 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { boxingModel } from './boxing.model';
-import { mock_boxing_list } from './mock_boxing_list';
+import { boxingService } from './boxing.service';
 
 @Component({ 
   selector: 'app-boxing',
   templateUrl: './boxing.component.html',
   styleUrls: ['./boxing.component.css']
 })
-export class BoxingComponent {
+export class BoxingComponent implements OnInit {
   
   data : boxingModel[] = [];
 
-  constructor(){
+  constructor(private boxingService:boxingService){
     
 
-    for(var m of mock_boxing_list){
-      this.data.push(m);
+    for(var game of this.data){
+      console.log(game);
+      this.data.push(game);
+      console.log(game);
 
     }
+  }
+
+  ngOnInit(): void {
+    this.boxingService.getBoxing().subscribe((data: boxingModel[]) =>{
+      console.log("fetching games");
+      for(var game of data){
+        console.log(game);
+        this.data.push(game);
+      }
+    });
   }
 }

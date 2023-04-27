@@ -1,12 +1,32 @@
 <app-navbartest></app-navbartest>
-<h1> NFL </h1>
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NFL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Teams </h1>
 <div class = "background">
-<div class="container" >
+    <div class="containe">
+        <div class="row">
+          <div class="col-sm">
+                <div class="container">
 
 
-<!-- <div *ngFor = "let n of data">
-    <app-small-list-group class = "c1" Sport = {{n.Sport}} Teams = {{n.Teams}} Date = "{{n.Date}}"></app-small-list-group>
-</div> -->
-  <h1>No games available</h1>
+                    <div *ngFor = "let n of games">
+                        <app-small-list-group class = "c1" Sport = {{n.Sport}} Teams = {{n.Teams}} Date = "{{n.Date}}"></app-small-list-group>
+                    </div>
+
     </div>
+</div>
+            <div class="col-sm">
+                <div id="div2">
+                    <div *ngFor = "let k of lis">
+                        <div class="col-sm">
+                            <img width = "50" height = "50" src ="{{k.Logo}}" />   {{k.Team}} 
+                                                
+                        </div>
+                    </div>
+
+                </div>
+         
+            </div>
+        </div>
+
+
+
 </div>

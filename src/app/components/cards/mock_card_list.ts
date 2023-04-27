@@ -1,22 +1,22 @@
 export const mock_card_list = [
     {
         Img: "./assets/nbaStreams.jpeg",
-        Link: " ",
+        Link: "/nbastreams",
         Description: "NBA Streams"
     },
     {
         Img:"./assets/nhlStreams.jpeg",
-        Link: " ",
+        Link: "/nhlstreams",
         Description: "NHL Streams"
     },
     {
         Img:"./assets/wvu.jpeg",
-        Link: " ",
+        Link: "/cfbstreams",
         Description: "CFB Streams"
     },
     {
         Img:"./assets/jj.png",
-        Link: " ",
+        Link: "/nflstreams",
         Description: "NFL Streams"
     }
 ];

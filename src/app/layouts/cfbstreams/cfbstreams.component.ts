@@ -1,22 +1,32 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { cfbModel } from './cfb.model';
-import { mock_cfb_list } from './mock_cfb_list';
+import { cfbstreamsService } from './cfbstreams.service';
 
 @Component({
   selector: 'app-cfbstreams',
   templateUrl: './cfbstreams.component.html',
   styleUrls: ['./cfbstreams.component.css']
 })
-export class cfbStreamsComponent {
+export class cfbStreamsComponent implements OnInit {
   
   data : cfbModel[] = [];
+  static cfbstreamsService: any;
 
-  constructor(){
+  constructor(private cfbstreamsService:cfbstreamsService){
     
 
-    for(var m of mock_cfb_list){
-      this.data.push(m);
-
-    }
+ 
   }
+
+  ngOnInit(): void {
+    this.cfbstreamsService.getcfbGames().subscribe((data: cfbModel []) => {
+      console.log("fetching games");
+      for(var game of data){
+        console.log(game);
+        this.data.push(game);
+      }
+    });
+  }
+
+
 }

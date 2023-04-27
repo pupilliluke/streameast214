@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { mock_mlb_list } from './mock_mlb_list';
 import { mlbModel } from './mlb.model';
 import { teamsList } from './teamsList.model';
 import { mock_mlbteams_list } from './mock_mlbteams';

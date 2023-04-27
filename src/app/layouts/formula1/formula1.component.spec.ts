@@ -11,8 +11,8 @@ describe('Formula1Component', () => {
       declarations: [ Formula1Component ]
     })
     .compileComponents();
-
-    fixture = TestBed.createComponent(Formula1Component);
+ 
+    fixture = TestBed.createComponent(Formula1Component); 
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

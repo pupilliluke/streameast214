@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { provideDatabase,getDatabase } from '@angular/fire/database'
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 
 import { AppComponent } from './app.component';
 import { NavbartestComponent } from './components/navbartest/navbartest.component';
@@ -18,11 +20,18 @@ import { Formula1Component } from './layouts/formula1/formula1.component';
 import { BoxingComponent } from './layouts/boxing/boxing.component';
 import { UFCComponent } from './layouts/ufc/ufc.component';
 import { PopupComponent } from './components/popup/popup.component';
-import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { AboutComponent } from './components/about/about.component';
 import { SmallListGroupComponent } from './components/small-list-group/small-list-group.component';
 import { StreamPageComponent } from './components/stream-page/stream-page.component';
+import { LoginPageComponent } from './layouts/login-page/login-page.component';
+import { RegisterPageComponent } from './layouts/register-page/register-page.component';
+import { AddGameComponent } from './components/add-game/add-game.component';
+import { FormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire/compat'; 
+import { environment } from 'src/environments/environment';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -45,14 +54,26 @@ import { StreamPageComponent } from './components/stream-page/stream-page.compon
     UserInfoComponent,
     AboutComponent,
     SmallListGroupComponent,
-    StreamPageComponent
+    StreamPageComponent,
+    LoginPageComponent,
+    RegisterPageComponent,
+    AddGameComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    FormsModule,
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)), provideDatabase(() => getDatabase()),
+    AngularFireModule.initializeApp(environment.firebase),
   ],
+
+  //   AngularFireModule.initializeApp(environment.firebase,'streameast-app'),
+  //   provideFirebaseApp(() => initializeApp(environment.firebase)),
+  //   provideDatabase(() => getDatabase()),
+  // ]AngularFireStoreModule,
+
   providers: [],
   bootstrap: [AppComponent]
 })
