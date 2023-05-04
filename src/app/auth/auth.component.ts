@@ -3,6 +3,7 @@ import { NgForm } from "@angular/forms";
 import { AuthService } from "./auth.service";
 import { AuthResponse } from "./authResponse";
 import { Observable } from "rxjs";
+import { Router } from "@angular/router";
 
 @Component({
     selector: "streameast-auth",
@@ -12,7 +13,7 @@ export class AuthComponent{
     public buttonClicked!:string;
     private authObservable!: Observable<AuthResponse>;
 
-    constructor(private authService:AuthService){
+    constructor(private authService:AuthService, private router:Router){
     }
 
     public onSubmit(data: NgForm){
@@ -30,6 +31,7 @@ export class AuthComponent{
         this.authObservable.subscribe(
             (data:AuthResponse) => {
                 console.log(data);
+                this.router.navigate(['/home']);
             },
             error => {
                 console.log(error.error);

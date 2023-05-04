@@ -1,4 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { AuthService } from 'src/app/auth/auth.service';
 import { idText } from 'typescript';
 
 @Component({
@@ -6,12 +8,24 @@ import { idText } from 'typescript';
   templateUrl: './navbartest.component.html',
   styleUrls: ['./navbartest.component.css']
 })
-export class NavbartestComponent {
+export class NavbartestComponent implements OnInit {
   @Input() League: string;
   @Input() Link: string;
 
-  constructor(){
+  private user!:Subscription;
+  public isAuthenticated:boolean = false;
+
+
+  constructor(private authentification:AuthService){
     this.League = " ";
     this.Link = " " ;
+
+
   }
+
+  ngOnInit(): void {
+    this.user = this.authentification.user.subscribe(user => {
+      this.isAuthenticated = !user ? false : true;
+    })
+    }
 }
