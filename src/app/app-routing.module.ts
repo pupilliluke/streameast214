@@ -15,6 +15,7 @@ import { StreamPageComponent } from './components/stream-page/stream-page.compon
 import { LoginPageComponent } from './layouts/login-page/login-page.component';
 import { RegisterPageComponent } from './layouts/register-page/register-page.component';
 import { AddGameComponent } from './components/add-game/add-game.component';
+import { AuthComponent } from './auth/auth.component';
 
 
 const routes: Routes = [
@@ -34,7 +35,7 @@ const routes: Routes = [
     {path: 'loginPage', component: LoginPageComponent},
     {path: 'registerPage', component:RegisterPageComponent},
     {path: 'admin', component:AddGameComponent},
-  
+    {path: 'auth', component: AuthComponent},
   ];
 
 @NgModule({

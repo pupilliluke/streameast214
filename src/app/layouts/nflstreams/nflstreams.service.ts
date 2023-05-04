@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { nflModel } from "./nfl.model";
+import { smalllistgrouplistmodel } from "src/app/components/small-list-group/small-list-group.list.model";
 
 @Injectable(
     {providedIn:'root'} 
@@ -15,13 +15,8 @@ export class nflstreamsService{
     } 
 
     getnflGames(){
-        return this.http.get<nflModel []>(this.baseUrl + this.nflGamesEndPoint + ".json");
+        return this.http.get<smalllistgrouplistmodel []>(this.baseUrl + this.nflGamesEndPoint + ".json");
     }
 
-    getGame0(index:number){
-        
-        return this.http.get<nflModel>(this.baseUrl + this.nflGamesEndPoint + '/' + index + '.json');
-  //      https://streameast-app-default-rtdb.firebaseio.com/nbaGames
-  //      https://streameast-app-default-rtdb.firebaseio.com/nbaGames/0.json    
-    }
+   
 }  

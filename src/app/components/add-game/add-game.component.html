@@ -3,7 +3,8 @@
 <div class = "background">
 
     <div class ="container">
-        <h2>Add Upcoming Game</h2>
+        <h2>Add Upcoming Game; 'add game' does not reset when clicked, but your game is still added</h2>
+        
         <div class="row">
             <div class="col-8">
                 <form #postForm="ngForm" (ngSubmit)="addGame(postForm.value)">
@@ -19,9 +20,16 @@
                         <span class="input-group-text">Date</span>
                         <input type="text" class="form-control" required ngModel name="Date">
                     </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Link</span>
+                        <input type="text" class="form-control" required ngModel name="Link">
+                    </div>
 
                     <button class="btn btn-light" style = margin-top:2% type="submit" [disabled]="!postForm.valid" >
                         Add Game
+                    </button>
+                    <button class="btn btn-light" style = margin-top:2%;margin-left:2%;   routerLink=""  routerLinkActive="active">
+                        Return to Home
                     </button>
                 </form>
             </div>

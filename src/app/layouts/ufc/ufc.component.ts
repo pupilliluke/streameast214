@@ -1,6 +1,6 @@
 import { Component, OnInit} from '@angular/core';
-import { ufcListModel } from './ufc_list.model';
 import { ufcService } from './ufc.service';
+import { smalllistgrouplistmodel } from 'src/app/components/small-list-group/small-list-group.list.model';
 
 
 @Component({
@@ -9,14 +9,14 @@ import { ufcService } from './ufc.service';
   styleUrls: ['./ufc.component.css']
 })
 export class UFCComponent implements OnInit {
-  data : ufcListModel[] = [];
+  data : smalllistgrouplistmodel[] = [];
 
   constructor(private ufcService: ufcService){
   
    
   }
    ngOnInit(): void {
-      this.ufcService.getUfcGames().subscribe((data: ufcListModel []) => {
+      this.ufcService.getUfcGames().subscribe((data: smalllistgrouplistmodel []) => {
         console.log("fetching games");
         for(var game of data){
           console.log(game);

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { cfbModel } from './cfb.model';
 import { cfbstreamsService } from './cfbstreams.service';
+import { smalllistgrouplistmodel } from 'src/app/components/small-list-group/small-list-group.list.model';
 
 @Component({
   selector: 'app-cfbstreams',
@@ -9,7 +10,7 @@ import { cfbstreamsService } from './cfbstreams.service';
 })
 export class cfbStreamsComponent implements OnInit {
   
-  data : cfbModel[] = [];
+  data : smalllistgrouplistmodel[] = [];
   static cfbstreamsService: any;
 
   constructor(private cfbstreamsService:cfbstreamsService){
@@ -19,7 +20,7 @@ export class cfbStreamsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.cfbstreamsService.getcfbGames().subscribe((data: cfbModel []) => {
+    this.cfbstreamsService.getcfbGames().subscribe((data: smalllistgrouplistmodel []) => {
       console.log("fetching games");
       for(var game of data){
         console.log(game);

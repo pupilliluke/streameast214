@@ -1,8 +1,8 @@
 // import { HttpClient } from "@angular/common/http";
 // import { AddGameComponent } from "./add-game.component";
-import { mlbModel } from "src/app/layouts/mlb-streams/mlb.model";
 import { Injectable } from "@angular/core";
 import { AngularFireDatabase} from "@angular/fire/compat/database";
+import { listgrouplistmodel } from "../list-group/list-group.list.model";
 
 
 @Injectable(
@@ -16,13 +16,13 @@ export class AddGameService {
     }
 
     getLiveGames(){
-        return this.db.list<mlbModel>("liveGames").valueChanges();
+        return this.db.list<listgrouplistmodel>("liveGames").valueChanges();
     }
 
     
-    addLiveGame(Game: mlbModel){
+    addLiveGame(Game: listgrouplistmodel){
         console.log("addLiveGame() called, new game should be pushed");
-        this.db.list<mlbModel>("liveGames").push(Game);
+        this.db.list<listgrouplistmodel>("liveGames").push(Game);
 
     }
 }

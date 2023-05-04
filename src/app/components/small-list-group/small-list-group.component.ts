@@ -9,11 +9,13 @@ export class SmallListGroupComponent {
   @Input() Sport: String;
   @Input() Teams: String;
   @Input() Date: String;
-
+  @Input() Link: String;
+  
   constructor(){
     this.Sport= " ";
     this.Teams = " " ;
     this.Date = " " ;
+    this.Link = " ";
 
   }
 }

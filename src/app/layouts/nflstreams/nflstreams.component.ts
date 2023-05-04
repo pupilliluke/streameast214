@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { teamsList } from './nfl_teamsList.model';
 import { mock_nbateams_list } from './mock_nflteams_list';
 import { nflstreamsService } from './nflstreams.service';
-import { nflModel } from './nfl.model';
+import { smalllistgrouplistmodel } from 'src/app/components/small-list-group/small-list-group.list.model';
 
 @Component({
   selector: 'app-nflstreams',
@@ -11,7 +11,7 @@ import { nflModel } from './nfl.model';
 })
 export class NflstreamsComponent implements OnInit {
 
-  games : nflModel[] = [];
+  games : smalllistgrouplistmodel[] = [];
   lis : teamsList[] = [];
 
   constructor(private nflstreamsService:nflstreamsService){
@@ -26,7 +26,7 @@ export class NflstreamsComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.nflstreamsService.getnflGames().subscribe((data: nflModel []) => {
+    this.nflstreamsService.getnflGames().subscribe((data: smalllistgrouplistmodel []) => {
       console.log("fetching games");
       for(var game of data){
         console.log(game);

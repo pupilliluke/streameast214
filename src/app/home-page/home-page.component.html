@@ -1,5 +1,6 @@
 <app-navbartest></app-navbartest>
 
+
 <!-- <router-outlet></router-outlet> -->
 
 <app-upcoming-nav-bar></app-upcoming-nav-bar>
@@ -13,7 +14,7 @@
     <!-- <div *ngFor="let link of links"> -->
 
     <div *ngFor = "let n of games">
-        <app-list-group class = "c1" Sport = {{n.Sport}} Teams = {{n.Teams}} Date = "{{n.Date}}"></app-list-group>
+        <app-list-group class = "c1" Sport = {{n.Sport}} Teams = {{n.Teams}} Date = "{{n.Date}}" Link="{{n.Link}}"></app-list-group>
     </div>
 
     </div>

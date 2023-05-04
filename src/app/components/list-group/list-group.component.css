@@ -47,3 +47,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 .d-flex:hover {
     cursor:pointer;
   }
+a.normal-link{
+    color: black;
+    text-decoration: none;
+ }

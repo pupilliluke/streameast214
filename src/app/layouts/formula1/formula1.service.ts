@@ -1,6 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { mlbModel } from "./mlb.model";
 import { Injectable } from "@angular/core";
+import { smalllistgrouplistmodel } from "src/app/components/small-list-group/small-list-group.list.model";
 
 @Injectable(
     {providedIn:'root'}
@@ -14,7 +15,7 @@ export class formula1Service{
     }
 
     getFormula1(){
-        return this.http.get<mlbModel []>(this.baseUrl + this.mlbGamesEndPoint + ".json");
+        return this.http.get<smalllistgrouplistmodel []>(this.baseUrl + this.mlbGamesEndPoint + ".json");
     }
 
     getGame0(index:number){

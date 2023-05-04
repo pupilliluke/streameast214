@@ -31,6 +31,7 @@ import { FormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat'; 
 import { environment } from 'src/environments/environment';
 import { HttpClientModule } from '@angular/common/http';
+import { AuthComponent } from './auth/auth.component';
 
 
 @NgModule({
@@ -58,7 +59,7 @@ import { HttpClientModule } from '@angular/common/http';
     LoginPageComponent,
     RegisterPageComponent,
     AddGameComponent,
-
+    AuthComponent,
   ],
   imports: [
     BrowserModule,
