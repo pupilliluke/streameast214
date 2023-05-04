@@ -1,5 +1,15 @@
-<div class="row">
-    <div class="col-12">
+<div class="d-flex" style = "background-color: rgb(80, 80, 80); color:rgba(229, 0, 0, 0.776); padding-top:5%; padding-left:37%; padding-bottom:30%">
+    <div class="row"  style = "border: black; border-radius: 10px; background-color: rgb(117, 117, 117); padding:2%" >
+        <div class="col-12">
+            <div class ="container-fluid">
+                <div class="here">
+                    Welcome to Luke's Streameast Project
+                </div>
+                <div class ="uh">
+                    <h1>LOGIN</h1>
+                </div>
+            </div>
+    
         <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Email:</span>
@@ -15,7 +25,7 @@
                     required password minlength="8">
               </div>
 
-              <button class = "btn btn-light m-1" type = "submit" [disabled] = "!authForm.valid" (click)="buttonClicked='Login'">
+              <button class = "btn btn-light m-1" type = "submit" [disabled] = "!authForm.valid" (click)="buttonClicked='Login'"  routerLink ="/home" routerLinkActive="active">
                Login
               </button>
               <button class = "btn btn-light m-1" type = "submit" (click)="buttonClicked='SignUp'">
@@ -25,4 +35,5 @@
 
     </div>
 
+</div>
 </div>

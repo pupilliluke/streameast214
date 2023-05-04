@@ -1,0 +1,12 @@
+.d-flex {
+    background-color: rgb(42, 42, 42);
+    padding-bottom: 30%;
+    color:white;
+    font-weight: 500;
+    text-align: right;
+    justify-content: center;
+}       
+.uh{
+    color:aqua;
+    justify-content: center;
+}

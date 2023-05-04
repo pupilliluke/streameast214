@@ -20,7 +20,7 @@ import { AuthComponent } from './auth/auth.component';
 
 const routes: Routes = [
     
-    {path: '', component: HomePageComponent},
+    {path: 'home', component: HomePageComponent},
     {path: 'nhlstreams', component: nhlStreamsComponent},
     {path: 'mlbstreams', component: MlbStreamsComponent},
     {path: 'nbastreams', component: NbastreamsComponent},
@@ -35,7 +35,7 @@ const routes: Routes = [
     {path: 'loginPage', component: LoginPageComponent},
     {path: 'registerPage', component:RegisterPageComponent},
     {path: 'admin', component:AddGameComponent},
-    {path: 'auth', component: AuthComponent},
+    {path: '', component: AuthComponent},
   ];
 
 @NgModule({
